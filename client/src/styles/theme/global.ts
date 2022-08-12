@@ -9,30 +9,12 @@ export default createGlobalStyle`
       overflow: auto;
     }
 
-
     html,npm
     body {
-      
       font-size: 17px;
       letter-spacing: -0.5px;
       font-family: 'Noto Sans CJK KR', sans-serif;
       color: ${(props) => props.theme.colors.font1};
-    }
-    
-    * {
-      box-sizing: border-box;
-      font-family: 'Noto Sans CJK KR', sans-serif;
-    }
-
-    a {
-      color: $font-color-base;
-      text-decoration: none;
-      color: black;
-    
-      &:hover,
-      &:focus {
-        cursor: pointer;
-      }
     }
 
     button {
@@ -41,6 +23,10 @@ export default createGlobalStyle`
       background: none;
       cursor: pointer;
       vertical-align: top;
+    }
+
+    a {
+      text-decoration: none;
     }
     
     figure,
@@ -70,4 +56,5 @@ export default createGlobalStyle`
       margin: 0;
       padding: 0;
     }
+
 `;
