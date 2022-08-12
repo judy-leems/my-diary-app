@@ -1,9 +1,9 @@
-import React from "react";
-import { ThemeProvider } from "styled-components";
-import theme from "./styles/theme";
-import GlobalStyle from "./styles/globalStyle";
-import GlobalFonts from "./styles/fonts/fonts";
-import Router from "./router";
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import theme from './styles/theme/theme';
+import GlobalStyle from './styles/theme/global';
+import GlobalFonts from './styles/fonts/font';
+import Router from './router';
 
 function App() {
   return (
