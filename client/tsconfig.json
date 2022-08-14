@@ -18,8 +18,13 @@
     "baseUrl": ".",
     "paths": {
       "@src/": ["src/*"],
-      "@components/": ["src/components/*"]
+      "@components/": ["src/components/*"],
+      "@pages/": ["src/pages/*"]
     }
   },
-  "include": ["src"]
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "include": ["src"],
+  "typeRoots": ["src/types"]
 }

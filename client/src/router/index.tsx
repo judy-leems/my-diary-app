@@ -1,10 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import GlobalLayout from './GlobalLayout';
-import HalfLayout from './HalfLayout';
-import Home from '../pages/Home';
-import UsersLogin from '../pages/Users/UsersLogin';
-import { URL } from '../constants/urls';
+import GlobalLayout from '@components/organisms/Layout/GlobalLayout';
+import Home from '@pages/Home';
+import { URL } from '@constats/string';
 
 function Router() {
   return (
@@ -12,9 +10,6 @@ function Router() {
       <Routes>
         <Route element={<GlobalLayout />}>
           <Route path={URL.HOME} element={<Home />}></Route>
-        </Route>
-        <Route element={<HalfLayout />}>
-          <Route path={URL.USERS_LOGIN} element={<UsersLogin />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
