@@ -22,9 +22,6 @@
       "@pages/": ["src/pages/*"]
     }
   },
-  "ts-node": {
-    "require": ["tsconfig-paths/register"]
-  },
   "include": ["src"],
   "typeRoots": ["src/types"]
 }
