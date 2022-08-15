@@ -1,9 +1,7 @@
-import express from "express";
+import { app } from "./src/app";
 
-const app = express();
-const test = require("./router");
+const PORT = process.env.PORT || 5000;
 
-app.use("/api", test);
-
-const port: number = 5000;
-app.listen(port, () => console.log(`${port}`));
+app.listen(PORT, () => {
+  console.log(`정상적으로 서버를 시작하였습니다.  http://localhost:${PORT}`);
+});
