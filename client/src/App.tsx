@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import axios from 'axios';
 import { ThemeProvider } from 'styled-components';
 import theme from './styles/theme/theme';
 import GlobalStyle from './styles/theme/global';
