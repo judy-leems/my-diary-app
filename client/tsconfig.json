@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -21,8 +21,9 @@
       "@components/*": ["./src/components/*"],
       "@pages/*": ["./src/pages/*"],
       "@constants/*": ["./src/constants/*"]
-    }
+    },
+    "outDir": "./dist",
+    "typeRoots": ["./node_modules/@types", "types"]
   },
-  "include": ["src"],
-  "typeRoots": ["src/types"]
+  "include": ["src"]
 }

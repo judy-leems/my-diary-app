@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import GlobalLayout from '@components/organisms/Layout/GlobalLayout';
 import Home from '@pages/Home';
-import { URL } from '@constants/string';
+import { URL } from '@constants/url';
 
 function Router() {
   return (
