@@ -42,6 +42,27 @@ class UserService {
     // 2개 프로퍼티를 jwt 토큰에 담음
     //return jwt.sign({ userId: user._id, role: user.role }, secretKey);
   }
+
+  async addUser(userInfo: LoginInfo): Promise<UserData> {
+    // 객체 destructuring
+    const { email, password } = userInfo;
+
+    // 이메일 중복 확인
+    const user = await this.userModel.findByEmail(email);
+    if (user) {
+      throw new Error('auth/email-already-use');
+    }
+    // 우선 비밀번호 해쉬화(암호화)
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    const newUserInfo = {
+      email,
+      password: hashedPassword,
+    };
+
+    // db에 저장
+    return await this.userModel.create(newUserInfo);
+  }
 }
 
 const userService = new UserService(userModel);

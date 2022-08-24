@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { userService } from '../services';
+import { UserInfo, UserData } from '../types/user.type';
 
 class UserController {
   async login(req: Request, res: Response, next: NextFunction) {
@@ -19,6 +20,20 @@ class UserController {
         })
         .status(200)
         .json(userToken);
+    } catch (error) {
+      next(error);
+    }
+  }
+  async signUp(req: Request, res: Response, next: NextFunction) {
+    try {
+      // req (request) 에서 데이터 가져오기
+
+      const userInfo: UserInfo = req.body;
+
+      // 위 데이터를 유저 db에 추가하기
+      const newUser = await userService.addUser(userInfo);
+
+      res.status(201).json(newUser);
     } catch (error) {
       next(error);
     }
