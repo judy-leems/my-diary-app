@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import GlobalLayout from '@components/organisms/Layout/GlobalLayout';
+import GlobalLayout from '@src/components/organisms/GlobalLayout';
 import Home from '@pages/Home';
 import { URL } from '@constants/url';
 
