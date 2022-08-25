@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: -0.5px;
     font-family: 'GmarketSans', sans-serif;
     overflow: auto;
-    font-size: ${(props) => props.theme.fontSize.text}
+    font-size: ${(props) => props.theme.fontSize.text};
   }
 
   a {
