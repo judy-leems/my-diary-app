@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import * as UI from './style';
 
 const GlobalLayout = () => {
-  return <UI.Container>GlobalLayout</UI.Container>;
+  return <UI.AppContainer>GlobalLayout</UI.AppContainer>;
 };
 
 export default GlobalLayout;

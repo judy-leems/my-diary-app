@@ -3,10 +3,13 @@
     "baseUrl": ".",
     "paths": {
       "@src/*": ["./src/*"],
+      "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@router/*": ["./src/router/*"],
       "@pages/*": ["./src/pages/*"],
-      "@constants/*": ["./src/constants/*"]
-
+      "@styles/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   }
 }
