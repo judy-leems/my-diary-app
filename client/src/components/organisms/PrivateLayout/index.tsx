@@ -1,9 +1,9 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import AppContainer from '@components/atoms/AppContainer';
 import * as UI from './style';
 
 const HomeLayout = () => {
-  return <UI.AppContainer>HomeLayout</UI.AppContainer>;
+  return <AppContainer>HomeLayout</AppContainer>;
 };
 
 export default HomeLayout;

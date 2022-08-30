@@ -1,9 +1,10 @@
 import { DefaultTheme } from 'styled-components';
 
 const fontSize = {
-  title: '20px',
-  subTitle: '16px',
-  text: '14px',
+  global: '62.5%',
+  title: '2.4rem',
+  subTitle: '2rem',
+  text: '1.6rem',
 };
 
 const colors = {
