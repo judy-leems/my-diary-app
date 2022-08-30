@@ -69,13 +69,11 @@ Remove: 파일을 삭제하는 작업만 수행한 경우
 ### **Client Architecture**
 
 ```
-reservation_web
+my-diary-app
 ├─ client
 │  ├─ public
 │  │  ├─ images
-│  │  │  ├─ favicon
-│  │  ├─ index.html
-│  │  └─ robots.txt
+│  │  │  └─ favicon
 │  ├─ src
 │  │  ├─ App.tsx
 │  │  ├─ api
@@ -114,3 +112,21 @@ reservation_web
 ## 🗄 Server
 
 ### **Server Architecture**
+
+```
+my-diary-app
+├─ server
+│  ├─ src
+│  │  ├─ @types
+│  │  │  └─ express
+│  │  ├─ app.ts
+│  │  ├─ controllers
+│  │  ├─ db
+│  │  │  ├─ models
+│  │  │  └─ schemas
+│  │  ├─ middlewares
+│  │  ├─ routers
+│  │  ├─ services
+│  │  └─ types
+
+```
