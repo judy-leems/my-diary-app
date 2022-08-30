@@ -8,8 +8,12 @@ const fontSize = {
 };
 
 const colors = {
-  primary: '',
-  font: '',
+  primary: '#54e346',
+  secondary: '#0e49b5',
+  title: '#121212',
+  subTitle: '#313131',
+  text: '#525252',
+  line: '#d3d6db',
   white: '#fff',
   black: '#000',
 };

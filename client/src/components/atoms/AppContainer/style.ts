@@ -8,4 +8,5 @@ export const AppContainer = styled.div`
   margin: 0 auto;
   max-width: 600px;
   font-size: ${(props) => props.theme.fontSize.text};
+  color: ${(props) => props.theme.colors.text};
 `;

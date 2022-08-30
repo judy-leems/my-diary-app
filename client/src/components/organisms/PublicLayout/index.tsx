@@ -1,9 +1,13 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import AppContainer from '@components/atoms/AppContainer';
-import * as UI from './style';
 
 const PublicLayout = () => {
-  return <AppContainer>PublicLayout</AppContainer>;
+  return (
+    <AppContainer>
+      <Outlet />
+    </AppContainer>
+  );
 };
 
 export default PublicLayout;
