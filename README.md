@@ -23,6 +23,13 @@ npm run start
 
 <br>
 
+### **Folder & File Naming**
+
+- client/src 바로 최하단에 있는 폴더 구조 및 이름은 수정하지 않는다.
+- ui 구성을 이루는 components, pages 및 .tsx 파일에 대한 하위 폴더 및 네이밍은 => PascalCase
+- 그외 나머지 파일 하위 폴더 및 네이밍은 => kebab-case
+  <br><br>
+
 ## 👩‍👩‍👧👨‍👨‍👦 **GIT**
 
 ### **Branch Naming**
@@ -104,11 +111,6 @@ reservation_web
 [Atomic Design Pattern 관련 내용 바로가기 - 활용](https://yeoulcoding.me/m/220)
 <br><br>
 
-### **Client Folder & File Naming**
-
-- client/src 바로 최하단에 있는 폴더 구조 및 이름은 수정하지 않는다.
-- ui 구성을 이루는 components, pages 하위 폴더 및 네이밍은 => PascalCase
-- 그외 나머지 파일 하위 폴더 및 네이밍은 => camelCase
-  <br><br>
-
 ## 🗄 Server
+
+### **Server Architecture**
