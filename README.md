@@ -23,7 +23,7 @@ npm run start
 
 <br>
 
-### **Folder & File Naming**
+## 📒**Folder & File Naming**
 
 - client/src 바로 최하단에 있는 폴더 구조 및 이름은 수정하지 않는다.
 - ui 구성을 이루는 components, pages 및 .tsx 파일에 대한 하위 폴더 및 네이밍은 => PascalCase
