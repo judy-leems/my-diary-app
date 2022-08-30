@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 interface Props {
   styletype: string;
   size: string;
+  block: boolean;
 }
 
 const ButtonStyle = css<Props>`
-  display: block;
+  display: ${(props: Props) => (props.block ? 'block' : 'inline-block')};
+  width: ${(props: Props) => (props.block ? '100%' : 'auto')};
   line-height: 1;
-  border-radius: 4px;
+  border-radius: 6px;
   border-width: 1px;
   border-style: solid;
   font-weight: 700;
@@ -21,6 +23,12 @@ const ButtonStyle = css<Props>`
           background: ${(props) => props.theme.colors.primary};
           color: ${(props) => props.theme.colors.white};
         `;
+      case 'secondary':
+        return css`
+          border-color: ${(props) => props.theme.colors.secondary};
+          background: ${(props) => props.theme.colors.secondary};
+          color: ${(props) => props.theme.colors.white};
+        `;
       default:
         return css`
           border-color: ${(props) => props.theme.colors.line};
@@ -30,13 +38,15 @@ const ButtonStyle = css<Props>`
   }}
   ${(props: Props) => {
     switch (props.size) {
-      case 'primary':
+      case 'large':
         return css`
-          padding: 10px 20px;
+          padding: 20px 20px;
+          border-radius: 10px;
+          font-size: ${(props) => props.theme.fontSize.subTitle};
         `;
       default:
         return css`
-          padding: 10px 20px;
+          padding: 12px 20px;
         `;
     }
   }}

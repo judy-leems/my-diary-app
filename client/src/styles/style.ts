@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
     background: none;
     cursor: pointer;
     vertical-align: top;
+    font-family: 'GmarketSans', sans-serif;
   }
 
   figure,
@@ -31,6 +32,10 @@ const GlobalStyle = createGlobalStyle`
 
   img {
     vertical-align: top;
+  }
+
+  input {
+    font-family: 'GmarketSans', sans-serif;
   }
 
   ul,

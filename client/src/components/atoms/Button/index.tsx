@@ -3,6 +3,7 @@ import * as UI from './style';
 
 interface Props {
   children: React.ReactElement | string;
+  block?: boolean;
   styletype?: string;
   size?: string;
   to?: string;
@@ -12,6 +13,7 @@ interface Props {
 const Button = ({
   styletype = 'default',
   size = 'default',
+  block = false,
   to,
   children,
   onClick,
@@ -23,13 +25,19 @@ const Button = ({
         styletype={styletype}
         size={size}
         onClick={onClick}
+        block={block}
       >
         {children}
       </UI.ButtonLink>
     );
   }
   return (
-    <UI.Button styletype={styletype} size={size} onClick={onClick}>
+    <UI.Button
+      styletype={styletype}
+      size={size}
+      onClick={onClick}
+      block={block}
+    >
       {children}
     </UI.Button>
   );

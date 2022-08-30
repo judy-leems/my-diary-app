@@ -17,7 +17,7 @@ export const Logo = styled.h1`
 `;
 
 export const Description = styled(Typography)`
-  font-size: 30px;
-  padding: 20px;
-  color: red;
+  font-weight: 700;
+  font-size: 4rem;
+  color: ${(props) => props.theme.colors.secondary};
 `;
