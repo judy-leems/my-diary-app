@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
   html,
   body {
     letter-spacing: -0.5px;
+    line-height: 1.4;
     font-family: 'GmarketSans', sans-serif;
     overflow: auto;
     font-size: ${(props) => props.theme.fontSize.global};

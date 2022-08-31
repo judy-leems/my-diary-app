@@ -7,5 +7,6 @@ export { default as Typography } from './atoms/Typography';
 
 export { default as HomeContainer } from './organisms/HomeContainer';
 export { default as HomeMessage } from './organisms/HomeMessage';
+export { default as HomeStart } from './organisms/HomeStart';
 export { default as PrivateLayout } from './organisms/PrivateLayout';
 export { default as PublicLayout } from './organisms/PublicLayout';

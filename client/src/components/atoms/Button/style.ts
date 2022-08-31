@@ -29,6 +29,12 @@ const ButtonStyle = css<Props>`
           background: ${(props) => props.theme.colors.secondary};
           color: ${(props) => props.theme.colors.white};
         `;
+      case 'info':
+        return css`
+          border-color: ${(props) => props.theme.colors.line};
+          background: ${(props) => props.theme.colors.white};
+          color: ${(props) => props.theme.colors.text};
+        `;
       default:
         return css`
           border-color: ${(props) => props.theme.colors.line};
@@ -40,9 +46,9 @@ const ButtonStyle = css<Props>`
     switch (props.size) {
       case 'large':
         return css`
-          padding: 20px 20px;
+          padding: 16px 20px;
           border-radius: 10px;
-          font-size: ${(props) => props.theme.fontSize.subTitle};
+          font-size: ${(props) => props.theme.fontSize.text};
         `;
       default:
         return css`

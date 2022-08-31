@@ -1,14 +1,11 @@
 import React from 'react';
-import { HomeContainer, HomeMessage, Button } from '@components/index';
-import { USER_LOGIN } from '@constants/string';
+import { HomeContainer, HomeStart, HomeMessage } from '@components/index';
 
 const Home = () => {
   return (
     <HomeContainer>
       <HomeMessage />
-      <Button styletype="primary" size="large" block>
-        {USER_LOGIN}
-      </Button>
+      <HomeStart />
     </HomeContainer>
   );
 };
