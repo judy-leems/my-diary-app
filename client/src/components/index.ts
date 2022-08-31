@@ -5,8 +5,10 @@ export { default as InputText } from './atoms/InputText';
 export { default as Label } from './atoms/Label';
 export { default as Typography } from './atoms/Typography';
 
+export { default as HomeMessage } from './molecules/HomeMessage';
+export { default as HomeStart } from './molecules/HomeStart';
+export { default as PageHeader } from './molecules/PageHeader';
+
 export { default as HomeContainer } from './organisms/HomeContainer';
-export { default as HomeMessage } from './organisms/HomeMessage';
-export { default as HomeStart } from './organisms/HomeStart';
 export { default as PrivateLayout } from './organisms/PrivateLayout';
 export { default as PublicLayout } from './organisms/PublicLayout';

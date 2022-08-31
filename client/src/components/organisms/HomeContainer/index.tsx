@@ -1,12 +1,14 @@
 import React from 'react';
+import { HomeMessage, HomeStart } from '@components/index';
 import * as UI from './style';
 
-interface Props {
-  children: JSX.Element | JSX.Element[];
-}
-
-const HomeContainer = ({ children }: Props) => {
-  return <UI.Container>{children}</UI.Container>;
+const HomeContainer = () => {
+  return (
+    <UI.Container>
+      <HomeMessage />
+      <HomeStart />
+    </UI.Container>
+  );
 };
 
 export default HomeContainer;

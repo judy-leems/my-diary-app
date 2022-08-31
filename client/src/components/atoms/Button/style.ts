@@ -15,6 +15,7 @@ const ButtonStyle = css<Props>`
   border-width: 1px;
   border-style: solid;
   font-weight: 700;
+  box-sizing: border-box;
   ${(props: Props) => {
     switch (props.styletype) {
       case 'primary':

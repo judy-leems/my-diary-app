@@ -1,13 +1,8 @@
 import React from 'react';
-import { HomeContainer, HomeStart, HomeMessage } from '@components/index';
+import { HomeContainer } from '@components/index';
 
 const Home = () => {
-  return (
-    <HomeContainer>
-      <HomeMessage />
-      <HomeStart />
-    </HomeContainer>
-  );
+  return <HomeContainer />;
 };
 
 export default Home;

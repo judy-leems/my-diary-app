@@ -1,8 +1,8 @@
 import React from 'react';
-import * as UI from './style';
+import UserLoginTemplate from './template';
 
 const UserLogin = () => {
-  return <div>index</div>;
+  return <UserLoginTemplate />;
 };
 
 export default UserLogin;
