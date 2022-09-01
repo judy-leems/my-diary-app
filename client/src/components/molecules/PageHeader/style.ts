@@ -7,5 +7,6 @@ export const Container = styled.div`
 `;
 
 export const Heading = styled.h2`
-  font-size: ${(props) => props.theme.fontSize.subTitle};
+  font-size: ${(props) => props.theme.fontSize.title};
+  color: ${(props) => props.theme.colors.title};
 `;

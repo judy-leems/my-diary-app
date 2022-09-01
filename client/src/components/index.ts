@@ -1,4 +1,6 @@
 export { default as AppContainer } from './atoms/AppContainer';
+export { default as PublicContainer } from './atoms/PublicContainer';
+export { default as PrivateContainer } from './atoms/PrivateContainer';
 export { default as Button } from './atoms/Button';
 export { default as Image } from './atoms/Image';
 export { default as InputText } from './atoms/InputText';

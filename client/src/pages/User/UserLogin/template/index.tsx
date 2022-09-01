@@ -1,13 +1,13 @@
 import React from 'react';
 import { STRING } from '@constants/string';
-import { PageHeader } from '@components/index';
+import { PageHeader, PublicContainer } from '@components/index';
 import * as UI from './style';
 
 const UserLoginTemplate = () => {
   return (
-    <UI.Container>
+    <PublicContainer>
       <PageHeader>{STRING.USER_LOGIN}</PageHeader>
-    </UI.Container>
+    </PublicContainer>
   );
 };
 
