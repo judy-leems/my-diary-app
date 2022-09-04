@@ -1,7 +1,14 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Container = styled.p`
+export const Container = styled.div`
   position: relative;
-  font-size: 20px;
-  color: ${(props) => props.theme.colors.text};
+  width: 100%;
+`;
+
+export const Input = styled.input`
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  padding: 16px 20px;
+  border: 1px solid ${(props) => props.theme.colors.line};
 `;
