@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   position: relative;
   text-align: left;
-  margin-botom: 2rem;
+  margin-bottom: 2rem;
 `;
 
 export const Heading = styled.h2`

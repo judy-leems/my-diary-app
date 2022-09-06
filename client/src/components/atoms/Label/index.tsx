@@ -2,11 +2,16 @@ import React from 'react';
 import * as UI from './style';
 
 interface Props {
-  children: React.ReactElement | string;
+  htmlFor?: string;
+  className?: string;
+  labelTitle: React.ReactNode | string;
 }
-
-const Label = ({ children }: Props) => {
-  return <UI.Container>{children}</UI.Container>;
+const Label = ({ htmlFor, className, labelTitle }: Props) => {
+  return (
+    <UI.Label htmlFor={htmlFor} className={className}>
+      {labelTitle}
+    </UI.Label>
+  );
 };
 
 export default Label;

@@ -2,11 +2,11 @@ import React from 'react';
 import * as UI from './style';
 
 interface Props {
-  children: JSX.Element | JSX.Element[];
+  children?: React.ReactNode | string;
 }
 
-const PublicContainer = ({ children }: Props) => {
+const FormFooter = ({ children }: Props) => {
   return <UI.Container>{children}</UI.Container>;
 };
 
-export default PublicContainer;
+export default FormFooter;

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
@@ -11,4 +11,7 @@ export const Input = styled.input`
   height: 50px;
   padding: 16px 20px;
   border: 1px solid ${(props) => props.theme.colors.line};
+  &:focus {
+    border-color: ${(props) => props.theme.colors.secondary};
+  }
 `;

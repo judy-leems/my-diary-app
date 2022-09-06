@@ -34,10 +34,12 @@ const GlobalStyle = createGlobalStyle`
   img {
     vertical-align: top;
   }
+
   label,
   input {
     font-family: 'GmarketSans', sans-serif;
     font-size: ${(props) => props.theme.fontSize.global};
+    box-sizing: border-box;
   }
 
   ul,

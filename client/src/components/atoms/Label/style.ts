@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const Container = styled.p`
-  position: relative;
-  font-size: 20px;
-  color: ${(props) => props.theme.colors.text};
+export const Label = styled.label`
+  font-size: ${(props) => props.theme.fontSize.text};
+  color: ${(props) => props.theme.colors.black};
+  flex-shrink: 0;
 `;

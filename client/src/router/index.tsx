@@ -12,8 +12,8 @@ function Router() {
       <Routes>
         <Route element={<PublicLayout />}>
           <Route path={URL.HOME} element={<Home />}></Route>
-          <Route path={URL.USER_LOGIN} element={<UserLogin />}></Route>
-          <Route path={URL.USER_REGISTER} element={<UserRegister />}></Route>
+          <Route path={URL.LOGIN} element={<UserLogin />}></Route>
+          <Route path={URL.REGISTER} element={<UserRegister />}></Route>
         </Route>
         <Route element={<PrivateLayout />}>
           <Route path={URL.HOME} element={<Home />}></Route>

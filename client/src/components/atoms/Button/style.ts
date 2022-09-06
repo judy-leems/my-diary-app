@@ -47,13 +47,13 @@ const ButtonStyle = css<Props>`
     switch (props.size) {
       case 'large':
         return css`
-          padding: 16px 20px;
-          border-radius: 10px;
+          padding: 1.6rem 2rem;
+          border-radius: 1rme;
           font-size: ${(props) => props.theme.fontSize.text};
         `;
       default:
         return css`
-          padding: 12px 20px;
+          padding: 1.2rem 2rem;
         `;
     }
   }}
