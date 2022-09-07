@@ -9,7 +9,7 @@ interface Props {
 const FormHeader = ({ title, children }: Props) => {
   return (
     <UI.Container>
-      <UI.Heading>{title}</UI.Heading>
+      <UI.Legend>{title}</UI.Legend>
       {children}
     </UI.Container>
   );

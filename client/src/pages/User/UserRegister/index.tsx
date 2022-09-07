@@ -1,8 +1,8 @@
 import React from 'react';
-import * as UI from './style';
+import UserRegisterTemplate from './template';
 
 const UserRegister = () => {
-  return <div>회원가입</div>;
+  return <UserRegisterTemplate />;
 };
 
 export default UserRegister;

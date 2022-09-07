@@ -27,7 +27,7 @@ const InputText = ({
   className,
 }: Props) => {
   return (
-    <UI.Container>
+    <UI.Container className={className}>
       <UI.Input
         type={type}
         id={id}
@@ -38,7 +38,6 @@ const InputText = ({
         value={value}
         maxLength={maxLength}
         readOnly={readOnly}
-        className={className}
       />
     </UI.Container>
   );

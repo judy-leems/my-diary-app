@@ -13,6 +13,9 @@ const UserSchema = new Schema({
     type: String,
     required: true,
   },
+  nickname: {
+    type: String,
+  },
   phone: {
     tpye: Number,
     default: 0,
