@@ -2,7 +2,7 @@ import React from 'react';
 import * as UI from './style';
 
 interface Props {
-  children: React.ReactElement | string;
+  children: string;
   className?: string;
   block?: boolean;
   styletype?: string;

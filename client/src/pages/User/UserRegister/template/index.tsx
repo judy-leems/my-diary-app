@@ -137,7 +137,9 @@ const UserRegisterTemplate = () => {
             <Button styletype="primary" size="large" block>
               {TITLE.REGISTER}
             </Button>
-            <Button to={URL.HOME}>{TITLE.HOME}</Button>
+            <Button styletype="link" size="link" to={URL.HOME}>
+              {TITLE.HOME}
+            </Button>
           </FormFooter>
         </Form>
       </UI.Container>

@@ -81,7 +81,9 @@ const UserLoginTemplate = () => {
             <Button styletype="primary" size="large" block>
               {TITLE.LOGIN}
             </Button>
-            <Button to={URL.HOME}>{TITLE.HOME}</Button>
+            <Button styletype="link" size="link" to={URL.HOME}>
+              {TITLE.HOME}
+            </Button>
           </FormFooter>
         </Form>
       </UI.Container>
