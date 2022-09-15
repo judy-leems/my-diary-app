@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import * as API from '@api/api';
 import { TITLE, ID, PLACEHOLDER } from '@constants/string';
 import { URL } from '@constants/url';
 import {
@@ -28,7 +29,23 @@ const UserRegisterTemplate = () => {
 
   const [formValues, setFormValues] = useState<valueObject>(initialValue);
 
-  const handleSubmit = () => {};
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      const data = {
+        email: formValues.inputUserId,
+        name: formValues.inputName,
+        nickName: formValues.inputNickname,
+        password: formValues.inputPassword,
+        phone: formValues.inputPhone,
+        role: formValues.inputRole,
+      };
+      console.log(data);
+      await API.post('/api/user/signup', data);
+    } catch (err: any) {
+      console.error(err);
+    }
+  };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });

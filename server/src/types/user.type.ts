@@ -1,7 +1,8 @@
 export interface UserInfo {
   email: string;
-  password: string;
   name: string;
+  nickName: string;
+  password: string;
   phone: number;
   role: string;
 }

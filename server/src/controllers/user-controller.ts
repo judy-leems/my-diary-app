@@ -35,6 +35,7 @@ class UserController {
 
       res.status(201).json(newUser);
     } catch (error) {
+      console.error(error);
       next(error);
     }
   }

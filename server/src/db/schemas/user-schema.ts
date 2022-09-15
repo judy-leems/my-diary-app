@@ -5,16 +5,16 @@ const UserSchema = new Schema({
     type: String,
     require: true,
   },
-  password: {
-    type: String,
-    required: true,
-  },
   name: {
     type: String,
     required: true,
   },
   nickname: {
     type: String,
+  },
+  password: {
+    type: String,
+    required: true,
   },
   phone: {
     tpye: Number,
